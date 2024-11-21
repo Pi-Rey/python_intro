@@ -1,4 +1,3 @@
-
 class Producto:
     def __init__(self, name, category, price, amount): #estructura del producto
         self.__name = name
@@ -60,23 +59,6 @@ class Producto:
         print('Categoría no válida.')
         print('Las categorías válidas de producto son: \n · Fruta\n · Ropa\n · Herramienta\n')
         
-
-
-
-# sugerencias de creación de productos
-producto1 = Producto();
-producto1.create_product('Manzana', 'Fruta', 0.98, 30)
-
-producto2 = Producto();
-producto2.create_product('Camiseta', 'Ropa', 15, 10)
-
-producto3 = Producto();
-producto3.create_product('Granada', 'Fruta', 2, 5)
-
-producto4 = Producto();
-producto4.create_product('Pantalón', 'Ropa', 23, 7)
-
-# producto5 = Producto();
 
 class Inventario:
     def __init__(self):
@@ -154,25 +136,3 @@ class Inventario:
                 print('Producto eliminado.')
                 return
         print(f'Producto "{name}" no encontrado en el inventario.')
-
-inventario1 = Inventario()
-
-inventario1.add_product(producto1)
-#inventario1.add_product("hola")
-inventario1.add_product(producto2)
-inventario1.add_product(producto3)
-inventario1.add_product(producto4)
-
-# # inventario1.get_inventory()
-# # inventario1.update_amount(producto3, 8)
-# inventario1.update_price(producto1, 100)
-# inventario1.get_inventory()
-
-# inventario1.search_product('manzana')
-inventario1.sort_categories('fruta')
-inventario1.sort_categories('ropa')
-
-inventario1.del_product('pantalón')
-
-inventario1.sort_categories('ropa')
-# inventario1.get_inventory()
